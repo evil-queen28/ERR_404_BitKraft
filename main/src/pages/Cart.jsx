@@ -87,11 +87,11 @@ function Cart() {
             </button>
             {ShowPay ? (
               <StripeCheckout
-                name="Xoxo Ecommerce store"
+                name="CodeSpot Ecommerce store"
                 stripeKey="pk_test_51MmpofIM7SnoQNQVjZDGfyRRzxhwUkT1f9mAq8yxAo2sTYNRvrAtNoJzDE8eUeui3YT86s9NvhIIgCgB4PXxNcba00OFGyPIgi"
                 amount={totalAmount * 100}
                 label="Pay with Stripe"
-                description={`Your Payment amount is ${totalAmount}`}
+                description={`Your Payment amount is $ ${totalAmount}`}
                 token={payment}
                 email={Authuser.email}
               />
